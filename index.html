@@ -1,49 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Design Civil Structure - Explore innovative civil engineering designs and infrastructure projects.">
-    <title>Design Civil Structure</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Civil Structure</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #555;
+    }
+
+    nav {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* Profile Section */
+    #profile-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #profile-section img {
+      border-radius: 50%;
+      max-width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    #profile-section h1 {
+      margin: 10px 0;
+    }
+
+    /* About Section */
+    #about-section {
+      padding: 20px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #about-section h2 {
+      margin-bottom: 10px;
+    }
+
+    /* Projects Section */
+    #projects-section {
+      margin: 30px 0;
+    }
+
+    #projects-section h2 {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .projects-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .project-box {
+      border: 1px solid #555;
+      padding: 10px;
+      width: 30%;
+      text-align: center;
+      border-radius: 5px;
+      transition: transform 0.2s;
+    }
+
+    .project-box:hover {
+      transform: scale(1.1);
+    }
+
+    /* Contact Section */
+    #contact-section {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    #contact-section form {
+      max-width: 500px;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #contact-section input,
+    #contact-section textarea {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #555;
+      border-radius: 3px;
+    }
+
+    #contact-section button {
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #contact-section button:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Design Civil Structure</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <h1>Design Civil Structure</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Welcome to Design Civil Structure, your hub for exploring cutting-edge civil engineering concepts, infrastructure development ideas, and practical designs for modern architecture.</p>
-        </div>
-    </section>
+  <!-- Profile Section -->
+  <section id="profile-section">
+    <!-- Your WhatsApp Image URL as the Profile Picture -->
+    <img src="https://web.whatsapp.com/c7835d49-2fbe-45eb-8142-4ed5bd7a81e1" alt="Profile Image">
+    <h1>Welcome to My Portfolio</h1>
+    <p>
+      Hi, I’m MJ, a passionate Civil Engineer with expertise in structural design concepts and innovative infrastructure projects.
+    </p>
+  </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Our Projects</h2>
-            <p>Here are some of the projects we’ve worked on:</p>
-            <ul>
-                <li>Smart Cities Development</li>
-                <li>Bridge Design Innovations</li>
-                <li>Eco-Friendly Housing Solutions</li>
-            </ul>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about-section">
+    <h2>About Me</h2>
+    <p>
+      Welcome to *Design Civil Structure*, your hub for innovative civil engineering solutions, infrastructure development,
+      and practical design ideas. With expertise in structural design and BIM modeling, I bring passion to every project.
+    </p>
+    <p>
+      <strong>Contact Information:</strong><br>
+      Mobile: <a href="tel:+6362735982">6362735982</a><br>
+      Email: <a href="mailto:mjan.engineer@gmail.com">mjan.engineer@gmail.com</a><br>
+      YouTube Channel: <a href="https://www.youtube.com/channel/your_channel_here" target="_blank">Design Civil Structure</a><br>
+      Instagram: <a href="https://www.instagram.com/design_struct" target="_blank">@design_struct</a>
+    </p>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Design Civil Structure | Built with passion for civil engineering.</p>
-        </div>
-    </footer>
+  <!-- Projects Section -->
+  <section id="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-box">Smart Cities Development</div>
+      <div class="project-box">Bridge Design Innovations</div>
+      <div class="project-box">Eco-Friendly Housing Solutions</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-section">
+    <h2>Contact Me</h2>
+    <form action="#">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer style="text-align:center; padding:10px; background:#333; color:#fff; margin-top:30px;">
+    <p>&copy; 2024 Design Civil Structure - Built with passion for civil engineering</p>
+  </footer>
 </body>
+
 </html>
